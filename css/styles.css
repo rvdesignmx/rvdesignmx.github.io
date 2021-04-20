@@ -391,7 +391,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   font-weight: 300;
 }
 
@@ -6073,7 +6073,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  background-color: #7e1abcba !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
