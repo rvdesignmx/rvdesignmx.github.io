@@ -8,10 +8,12 @@
     <meta name="author" content="" />
     <title>rvdesignmx</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/vector.svg"/>
+    <link rel="icon" type="image/x-icon" href="assets/img/vector.svg" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik&display=swap" rel="stylesheet"
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
@@ -195,7 +197,7 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <form novalidate="novalidate" action="https://formspree.io/f/xrgrbyvz" method="POST">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Nombre</label>
@@ -208,8 +210,8 @@
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Correo</label>
-                                <input class="form-control" id="Correo" type="email" placeholder="Correo"
-                                    required="required"
+                                <input class="form-control" id="Correo" type="email" name="_replyto"
+                                    placeholder="Correo" required="required"
                                     data-validation-required-message="Favor de ingresar su correo." />
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -226,8 +228,8 @@
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Mensaje</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Mensaje"
-                                    required="required"
+                                <textarea name="message" class="form-control" id="message" rows="5"
+                                    placeholder="Mensaje" required="required"
                                     data-validation-required-message="Favor de ingresar su mensaje."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -235,7 +237,7 @@
                         <br />
                         <div id="success"></div>
                         <div class="form-group" style="text-align: center;"><button class="btn btn-primary btn-xl"
-                                id="sendMessageButton" type="submit">Enviar</button></div>
+                                type="submit">Enviar</button></div>
                         <br />
                         <br />
                 </div>
@@ -259,19 +261,19 @@
                     <p class="lead mb-0">
                         Calle Dinamarca 58, Juárez, Cuahutémoc,
                         <br />
-                        06600 Ciudad de México, CDMX, teléfono: <a href="tel:+5255000000"> +5255000000</a>
+                        06600 Ciudad de México, CDMX, teléfono:
+                        <br /> <a href="tel:+5255000000"> +5255000000</a>
                     </p>
                 </div>
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Redes Sociales</h4>
-                    <a class="btn btn-outline-light btn-social mx-1"
-                        href="https://es-la.facebook.com/EsdieMex/" target="_blank"> <i
-                            class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/ricvgarcia/"
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://es-la.facebook.com/EsdieMex/"
+                        target="_blank"> <i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/universidadesdie/"
                         target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.behance.net/ricardogarca9/" target="_blank"><i
-                            class="fab fa-fw fa-behance"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.behance.net/ricardogarca9/"
+                        target="_blank"><i class="fab fa-fw fa-behance"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1"
                         href="https://api.whatsapp.com/send/?phone=5255000000&text=Hola,%20quiero%20informes&app_absent=0"
                         target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
